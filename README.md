@@ -10,6 +10,18 @@ To install dependencies:
 bun install
 ```
 
+To run validation:
+
+```bash
+bun run validate
+```
+
+To auto-fix:
+
+```bash
+bun run fix
+```
+
 ## Usage
 
 ### Server (Mediator)
