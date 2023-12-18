@@ -1,0 +1,32 @@
+{
+  "name": "afj-module-url-shortener",
+  "module": "src/index.ts",
+  "main": "build/index",
+  "types": "build/index",
+  "type": "module",
+  "author": "Timo Glastra <github@glastra.me>",
+  "files": ["build"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "validate": "biome check .",
+    "fix": "biome check --apply-unsafe ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TimoGlastra/afj-module-url-shortener"
+  },
+  "devDependencies": {
+    "@aries-framework/core": "^0.4.2",
+    "@biomejs/biome": "^1.4.1",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "@aries-framework/core": "^0.4.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "reflect-metadata": "^0.1.13"
+  }
+}
